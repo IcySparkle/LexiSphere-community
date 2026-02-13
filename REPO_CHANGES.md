@@ -12,4 +12,5 @@
 - Updated `.gitignore` to ignore `node_modules/` and generated `coverage/` outputs from test runs.
 - Added `.github/workflows/ci.yml` to enforce `npm run test:coverage` on `push`/`pull_request` for `main`.
 - Removed `AGENT*.md` files from the public repository and added `AGENT*.md` to `.gitignore`.
+- Updated README wording from legacy "capture mode" to manual "Capture Now" terminology for consistency with the extension UX.
 
