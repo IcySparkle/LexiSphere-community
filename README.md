@@ -10,7 +10,7 @@ Key features:
 - Deterministic string-table translation (no guessing)
 - URL-prefix rules with fine-grained scoping
 - Multiple display modes: replace text, annotate with overlay badges, or both
-- Capture mode to collect untranslated strings for incremental dictionary building
+- Manual Capture Now scan to collect untranslated strings for incremental dictionary building
 - Optional AI Assist for translation suggestions (manual, never auto-applied)
 - Local-first: all data stays on your machine
 
