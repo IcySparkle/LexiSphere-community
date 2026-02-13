@@ -1,6 +1,5 @@
 # REPO_MAP
 
-- AGENTS.md: Workspace rules and agent coordination protocol.
 - README.md: Public-facing repo overview with install links and support guidance.
 - CONTRIBUTING.md: How to report bugs, request features, and participate.
 - REPO_MEMORY.md: Repo purpose and structure summary.
@@ -13,10 +12,6 @@
 - .github/ISSUE_TEMPLATE/bug_report.yml: Structured bug report form.
 - .github/ISSUE_TEMPLATE/feature_request.yml: Structured feature request form.
 - .github/ISSUE_TEMPLATE/config.yml: Issue template config (routes to discussions/docs).
-- AGENT_COMM_CODEX.md: Codex agent communication log.
-- AGENT_COMM_CLAUDE.md: Claude agent communication log.
-- AGENT_COMM_GEMINI.md: Gemini agent communication log.
-- AGENT_COMM_QWEN.md: Qwen agent communication log.
 - scripts/repoValidation.ts: Validation helpers for issue-template structure and markdown link safety.
 - tests/README.md: Test command reference and coverage scope documentation.
 - tests/repoValidation.test.ts: Unit tests for repository validation helpers.
