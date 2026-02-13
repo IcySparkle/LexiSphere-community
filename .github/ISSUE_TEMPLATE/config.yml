@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and Discussion
+    url: https://github.com/IcySparkle/LexiSphere-community/discussions
+    about: Ask questions and discuss LexiSphere usage
+  - name: Documentation
+    url: https://lexisphere.dev
+    about: Check the docs before opening an issue
