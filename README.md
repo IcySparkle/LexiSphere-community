@@ -1,3 +1,5 @@
+🌐 **Language / 言語:** [English](README.md) | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [한국어](README.ko.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Français](README.fr.md) | [Português (BR)](README.pt-BR.md) | [繁體中文](README.zh-TW.md) | [Tiếng Việt](README.vi.md) | [Bahasa Indonesia](README.id.md) | [Русский](README.ru.md) | [ไทย](README.th.md) | [Türkçe](README.tr.md) | [Italiano](README.it.md) | [Polski](README.pl.md)
+
 # LexiSphere Community
 
 This is the public feedback and release repository for [LexiSphere](https://github.com/IcySparkle/LexiSphere-community), the Controlled Site Translator Chrome extension.
