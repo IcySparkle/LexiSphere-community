@@ -1,3 +1,10 @@
+﻿/**
+ * Vitest Configuration
+ *
+ * Defines test execution and coverage thresholds that gate LS-COMM quality
+ * checks in CI.
+ */
+
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
@@ -17,3 +24,4 @@ export default defineConfig({
     },
   },
 });
+

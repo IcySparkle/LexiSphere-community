@@ -2,6 +2,7 @@
 
 - README.md: Public-facing repo overview with install links and support guidance.
 - CONTRIBUTING.md: How to report bugs, request features, and participate.
+- COMMENTING_GUIDELINES.md: Shared standards for module/API comments, inline comments, and source file intro blocks.
 - REPO_MEMORY.md: Repo purpose and structure summary.
 - REPO_MAP.md: Index of important files.
 - REPO_CHANGES.md: Dated log of notable changes.
