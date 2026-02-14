@@ -16,6 +16,7 @@ LexiSphere-community is the public-facing repository for the LexiSphere Chrome E
 - No source code in this repository.
 - Repository quality checks are implemented with Vitest to validate issue templates and markdown link safety.
 - GitHub Actions CI enforces coverage checks on `push`/`pull_request` to `main`.
+- Script/test source comment conventions are standardized in `COMMENTING_GUIDELINES.md`.
 
 ## Related Repositories
 - `IcySparkle/LexiSphere` (private): Extension source code.

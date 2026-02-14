@@ -1,7 +1,17 @@
+﻿/**
+ * Community Repo Validation Helpers
+ *
+ * Parses issue-template YAML and markdown content to validate required fields,
+ * contact links, and secure URL usage.
+ */
+
 import { parse } from 'yaml';
 
 type Dict = Record<string, unknown>;
 
+/**
+ * Normalized issue-template field metadata extracted from YAML bodies.
+ */
 export interface TemplateField {
   id: string;
   type: string;
@@ -16,6 +26,9 @@ function readString(value: unknown): string {
   return typeof value === 'string' ? value.trim() : '';
 }
 
+/**
+ * Parse YAML text and return an object document when valid.
+ */
 export function parseYamlDocument(text: string): Dict {
   try {
     const parsed = parse(text);
@@ -25,6 +38,9 @@ export function parseYamlDocument(text: string): Dict {
   }
 }
 
+/**
+ * Extract typed field rows from an issue-template document body.
+ */
 export function listTemplateFields(document: unknown): TemplateField[] {
   if (!isRecord(document)) {
     return [];
@@ -53,12 +69,18 @@ export function listTemplateFields(document: unknown): TemplateField[] {
   return fields;
 }
 
+/**
+ * List required field IDs declared by an issue-template document.
+ */
 export function listRequiredFieldIds(document: unknown): string[] {
   return listTemplateFields(document)
     .filter((field) => field.required)
     .map((field) => field.id);
 }
 
+/**
+ * Return required top-level keys missing from a parsed template document.
+ */
 export function findMissingTopLevelKeys(
   document: unknown,
   requiredKeys: string[],
@@ -69,6 +91,9 @@ export function findMissingTopLevelKeys(
   return requiredKeys.filter((key) => !(key in document));
 }
 
+/**
+ * Return required field IDs that are not present in template body fields.
+ */
 export function findMissingRequiredIds(
   document: unknown,
   requiredIds: string[],
@@ -77,6 +102,9 @@ export function findMissingRequiredIds(
   return requiredIds.filter((requiredId) => !existing.has(requiredId));
 }
 
+/**
+ * Validate `contact_links` URLs and return entries with invalid/insecure URLs.
+ */
 export function validateContactLinkUrls(document: unknown): string[] {
   if (!isRecord(document)) {
     return ['contact_links'];
@@ -101,6 +129,9 @@ export function validateContactLinkUrls(document: unknown): string[] {
   return invalid;
 }
 
+/**
+ * Extract markdown link URLs from `[label](url)` link expressions.
+ */
 export function extractMarkdownLinks(markdown: string): string[] {
   const matches = markdown.match(/\[[^\]]+\]\(([^)]+)\)/g) ?? [];
   return matches
@@ -111,6 +142,9 @@ export function extractMarkdownLinks(markdown: string): string[] {
     .filter(Boolean);
 }
 
+/**
+ * Check whether a URL is valid HTTPS.
+ */
 export function isSecureHttpUrl(rawUrl: string): boolean {
   try {
     const parsed = new URL(rawUrl);
@@ -120,6 +154,9 @@ export function isSecureHttpUrl(rawUrl: string): boolean {
   }
 }
 
+/**
+ * Find markdown links that use insecure `http:` URLs.
+ */
 export function findInsecureHttpLinks(markdown: string): string[] {
   return extractMarkdownLinks(markdown).filter((url) => {
     try {
@@ -130,3 +167,4 @@ export function findInsecureHttpLinks(markdown: string): string[] {
     }
   });
 }
+

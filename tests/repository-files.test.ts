@@ -1,3 +1,10 @@
+﻿/**
+ * Repository File Integration Tests
+ *
+ * Validates real community repo templates/docs against helper constraints for
+ * required metadata and secure links.
+ */
+
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
@@ -59,3 +66,4 @@ describe('repository file validation', () => {
     expect(findInsecureHttpLinks(contributing)).toEqual([]);
   });
 });
+

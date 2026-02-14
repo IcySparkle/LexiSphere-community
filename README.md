@@ -36,6 +36,8 @@ Have a question or want to share how you use LexiSphere? Visit [Discussions](htt
 
 Full documentation is available at the [LexiSphere website](https://lexisphere.dev) (coming soon).
 
+Repository-level source-commenting standards are documented in `COMMENTING_GUIDELINES.md`.
+
 ## License
 
 LexiSphere is proprietary software. See the extension's terms of service for usage details.

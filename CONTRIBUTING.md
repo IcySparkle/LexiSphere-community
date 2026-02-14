@@ -20,3 +20,8 @@ LexiSphere's source code is maintained in a private repository. This public repo
 ## Documentation Contributions
 
 If you find errors or gaps in the documentation, please open an issue describing the problem. Documentation source files may be opened for contributions in the future.
+
+## Code Commenting Standards
+
+- Follow `COMMENTING_GUIDELINES.md` for TSDoc/JSDoc usage and inline-comment rules.
+- Add a short file-intro doc block to each source file under `scripts/` and non-trivial test helper files, especially for new or substantially edited files.

@@ -1,3 +1,10 @@
+﻿/**
+ * Validation Helper Unit Tests
+ *
+ * Verifies parser and link-check helper behavior used by repository validation
+ * tooling.
+ */
+
 import { describe, expect, it } from 'vitest';
 import {
   extractMarkdownLinks,
@@ -82,3 +89,4 @@ describe('repoValidation helpers', () => {
     expect(findInsecureHttpLinks(markdown)).toEqual(['http://example.com']);
   });
 });
+
