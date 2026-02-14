@@ -1,6 +1,7 @@
 # REPO_CHANGES
 
 ## 2026-02-14
+- Added language selector bar to `README.md` and created 15 localized README files (`README.{locale}.md`) for ja, zh-CN, ko, de, es, fr, pt-BR, zh-TW, vi, id, ru, th, tr, it, pl.
 - Expanded `COMMENTING_GUIDELINES.md` with an R/S/O adoption-profile matrix (Public SDK vs Internal App vs Monorepo expectations).
 - Added module intro comments to LS-COMM script/test/config TypeScript files (`scripts/repoValidation.ts`, test files, `vitest.config.ts`).
 - Added JSDoc comments for exported interfaces/functions in `scripts/repoValidation.ts` to clarify parsing and validation contracts.

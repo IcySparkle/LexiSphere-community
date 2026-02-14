@@ -1,6 +1,7 @@
 # REPO_MAP
 
-- README.md: Public-facing repo overview with install links and support guidance.
+- README.md: Public-facing repo overview with install links and support guidance (English, with language selector).
+- README.{locale}.md: Localized README files for 15 locales (ja, zh-CN, ko, de, es, fr, pt-BR, zh-TW, vi, id, ru, th, tr, it, pl).
 - CONTRIBUTING.md: How to report bugs, request features, and participate.
 - COMMENTING_GUIDELINES.md: Shared standards for module/API comments, inline comments, and source file intro blocks.
 - REPO_MEMORY.md: Repo purpose and structure summary.
